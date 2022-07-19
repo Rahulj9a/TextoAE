@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       {/* <Router> */}
-        <Navbar title="TextUtils" mode={Mode} toggleMode={toggleMode} />
+        <Navbar title="textoAE" mode={Mode} toggleMode={toggleMode} />
         {/*  Here Navbar is a component */}
         {/* here we are passing props */}
         <Alert alert={alert} />
