@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/textoAE/static/css/main.31d6cfe0.css",
+    "main.js": "/textoAE/static/js/main.a2a72878.js",
+    "static/js/787.f3ca7831.chunk.js": "/textoAE/static/js/787.f3ca7831.chunk.js",
+    "index.html": "/textoAE/index.html",
+    "main.a2a72878.js.map": "/textoAE/static/js/main.a2a72878.js.map",
+    "787.f3ca7831.chunk.js.map": "/textoAE/static/js/787.f3ca7831.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.a2a72878.js"
+  ]
+}
