@@ -1,5 +1,5 @@
 import "./App.css";
-  /* import About from "./components/About";   */
+ /*  import About from "./components/About";   */
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
@@ -25,9 +25,14 @@ function App() {
     })
     setTimeout(()=>setalert(null),2000)
   }
+  
 
-
-  let toggleMode = () => {
+  let toggleMode = (cls) => {
+     document.body.classList.remove("bg-")
+     console.log(document.body.classList+'1')
+    document.body.classList.add('bg-'+cls)
+    console.log(document.body.classList+'2')
+   
     if (Mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#112B3C";
@@ -41,7 +46,7 @@ function App() {
 
   return (
     <>
-      {/* <Router> */}
+     {/*  <Router> */}
         <Navbar title="textoAE" mode={Mode} toggleMode={toggleMode} />
         {/*  Here Navbar is a component */}
         {/* here we are passing props */}
@@ -57,7 +62,7 @@ function App() {
              />
             <Route exact path="/about"
               
-              element={<About mode={Mode} />}
+              element={ */}{/* <About mode={Mode} /> */}{/* }
              />
           </Routes> */}
         </div>

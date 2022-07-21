@@ -12,12 +12,7 @@ export default function Navbar(props) {
       className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode}`}
     >
       <div className="container-fluid">
-        <a
-          className="navbar-brand"
-          href="/"
-          
-          rel="noreferrer"
-        >
+        <a className="navbar-brand" href="#" rel="noreferrer">
           {props.title}
           {/* Here title is a property and can be changed from app.js */}
         </a>
@@ -35,21 +30,52 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
-                className="nav-link active "
-                aria-current="page"
-                href="/"
-              >
+              <a className="nav-link active " aria-current="page" href="#">
                 Home
               </a>
             </li>
             {/* <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <a className="nav-link" href="/about">
                 About
-              </Link>
+              </a>
             </li> */}
           </ul>
-          <div className={`form-check form-switch `}>
+          <div className="d-flex">
+            <div
+              className="bg-primary rounded mx-2"
+              style={{ height: "30px", width: "30px" }}
+              onClick={()=>props.toggleMode('primary')}
+            ></div>
+            <div
+              className="bg-danger rounded mx-2"
+              style={{ height: "30px", width: "30px" }}
+              onClick={()=>props.toggleMode('danger')}
+            ></div>
+            <div
+              className="bg-success rounded mx-2"
+              style={{ height: "30px", width: "30px" }}
+              onClick={()=>props.toggleMode('success')}
+            ></div>
+            <div
+              className="bg-warning rounded mx-2"
+              style={{ height: "30px", width: "30px" }}
+              onClick={()=>props.toggleMode('warning')}
+            ></div>
+             <div
+              className={`bg-dark rounded mx-2 border`}
+              style={{ height: "30px", width: "30px" }}
+              
+               onClick={()=>props.toggleMode('dark')}
+            ></div>
+            <div
+              className={`bg-light rounded mx-2 border`}
+              style={{ height: "30px", width: "30px" }}
+              
+               onClick={()=>props.toggleMode('light')}
+            ></div>
+          </div>
+           
+          {/* <div className={`form-check form-switch `}>
             <input
               className="form-check-input"
               type="checkbox"
@@ -65,7 +91,7 @@ export default function Navbar(props) {
             >
               Dark mode
             </label>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

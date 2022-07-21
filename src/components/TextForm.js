@@ -48,7 +48,7 @@ export default function TextForm(props) {
   const handleFirstCapital = () => {
      
      
-    let newtext = text.split(/[ ]+/).map(e =>  
+    let newtext = text.split(/[ ]+/).filter(e=>e!=='').map(e =>  
       e[0].toUpperCase() + e.slice(1).toLowerCase()
     )
     changedText(newtext.join(" "))
@@ -77,7 +77,7 @@ export default function TextForm(props) {
   let longestWord = WordAssending[WordAssending.length - 1];
    
 
-  let wordsInText = text.split(/[ ]+/).length-1
+  let wordsInText = text.split(/[ ]+/).filter(a=>a!=='').length
   
   let totalCharacters = text.split("").filter(e => e !== " ").length
   
