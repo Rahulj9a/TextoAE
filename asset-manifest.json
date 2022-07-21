@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/textoAE/static/css/main.31d6cfe0.css",
-    "main.js": "/textoAE/static/js/main.4e7d13fb.js",
+    "main.js": "/textoAE/static/js/main.60f1030b.js",
     "static/js/787.b0bd3d1b.chunk.js": "/textoAE/static/js/787.b0bd3d1b.chunk.js",
     "index.html": "/textoAE/index.html",
-    "main.4e7d13fb.js.map": "/textoAE/static/js/main.4e7d13fb.js.map",
+    "main.60f1030b.js.map": "/textoAE/static/js/main.60f1030b.js.map",
     "787.b0bd3d1b.chunk.js.map": "/textoAE/static/js/787.b0bd3d1b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.4e7d13fb.js"
+    "static/js/main.60f1030b.js"
   ]
 }
