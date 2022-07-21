@@ -13,6 +13,15 @@ import Alert from "./components/Alert";
 } from "react-router-dom" */
 
  
+const handleRemovalClassList=()=>{
+  document.body.classList.remove("bg-light")
+  document.body.classList.remove("bg-dark");
+  document.body.classList.remove("bg-warning");
+  document.body.classList.remove("bg-success");
+  document.body.classList.remove("bg-danger");
+  document.body.classList.remove("bg-primary");
+  
+}
 
 function App() {
   const [Mode, setMode] = useState("light"); //whether dark mode is enabled or not
@@ -29,7 +38,7 @@ function App() {
 
   let toggleMode = (cls) => {
       
-     
+    handleRemovalClassList();
     document.body.classList.toggle('bg-'+cls)
     
    
@@ -43,6 +52,7 @@ function App() {
       showAlert("Dark mode has been disabled", "success");
     } */
   };
+
 
   return (
     <>
