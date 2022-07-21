@@ -33,7 +33,7 @@ function App() {
     document.body.classList.toggle('bg-'+cls)
     
    
-    if (Mode === "light") {
+    /* if (Mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#112B3C";
       showAlert("Dark mode has been enabled", "success")
@@ -41,31 +41,35 @@ function App() {
       setMode("light");
       document.body.style.backgroundColor = "#EFEFEF";
       showAlert("Dark mode has been disabled", "success");
-    }
+    } */
   };
 
   return (
     <>
-     {/*  <Router> */}
-        <Navbar title="textoAE" mode={Mode} toggleMode={toggleMode} />
-        {/*  Here Navbar is a component */}
-        {/* here we are passing props */}
-        <Alert alert={alert} />
-        <div className="container">
-          {/* <Routes>
+      {/*  <Router> */}
+      <Navbar title="textoAE" mode={Mode} toggleMode={toggleMode} />
+      {/*  Here Navbar is a component */}
+      {/* here we are passing props */}
+      <Alert alert={alert}  />
+      <div className="container">
+        {/* <Routes>
             <Route exact path="/"
-              element={ */}<TextForm
-                heading="Enter your text here"
-                mode={Mode}
-                showalert={showAlert}
-              />{/* }
+              element={ */}
+        <TextForm
+          heading="Enter your text here"
+          mode={Mode}
+          showalert={showAlert}
+        />
+        {/* }
              />
             <Route exact path="/about"
               
-              element={ */}{/* <About mode={Mode} /> */}{/* }
+              element={ */}
+        {/* <About mode={Mode} /> */}
+        {/* }
              />
           </Routes> */}
-        </div>
+      </div>
       {/* </Router> */}
     </>
   );
