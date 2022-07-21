@@ -28,10 +28,10 @@ function App() {
   
 
   let toggleMode = (cls) => {
-     document.body.classList.remove("bg-")
-     console.log(document.body.classList+'1')
-    document.body.classList.add('bg-'+cls)
-    console.log(document.body.classList+'2')
+      
+     
+    document.body.classList.toggle('bg-'+cls)
+    
    
     if (Mode === "light") {
       setMode("dark");

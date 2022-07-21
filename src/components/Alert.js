@@ -8,7 +8,7 @@ function Alert(props) {
           className={`alert alert-${props.alert.type} alert-dismissible fade show`}
           role="alert"
         >
-        {props.alert.msg}
+       
         </div>
            
       </div>
@@ -17,3 +17,4 @@ function Alert(props) {
 }
 
 export default Alert;
+  
