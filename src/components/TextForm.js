@@ -31,11 +31,12 @@ export default function TextForm(props) {
   };
 
   const handlecopy = () => {
-    console.log('ok')
-    let text = document.getElementById("textarea");
-    text.select()
-    text.setSelectionRange(0, 9999);
-    navigator.clipboard.writeText(text.value)
+     
+   /*  let text = document.getElementById("textarea");
+    text.select() */ // we dont need these when we are using navigator api
+    
+    navigator.clipboard.writeText(text)
+   /*  document.getSelection().removeAllRanges() */
     props.showalert("Successfully copied", "success"); 
   };
 
